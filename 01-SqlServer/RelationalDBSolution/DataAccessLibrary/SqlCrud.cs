@@ -72,9 +72,27 @@ namespace DataAccessLibrary
                 _connectionString).First().Id;
 
             // Identify if the Phone number exists
-            // Insert into the link table for that number
-            // Insert the new phone number if not, and get the id
-            // Then do the link table insert
+            foreach (var phoneNumber in contact.PhoneNumbers)
+            {
+                if (phoneNumber.Id == 0)
+                {
+                    sql = "insert into dbo.PhoneNumbers (PhoneNumber) values (@PhoneNumber);";
+                    db.SaveData(sql, new { phoneNumber.PhoneNumber }, _connectionString);
+
+                    sql = "select Id from dbo.PhoneNumbers where PhoneNumber = @PhoneNumber;";
+                    phoneNumber.Id = db.LoadData<IdLookUpModel, dynamic>(sql,
+                        new { phoneNumber.PhoneNumber },
+                        _connectionString).First().Id;
+                }
+              
+                sql = "insert into dbo.ContactPhoneNumbers (ContactId, PhoneNumberId) values (@ContactId, @PhoneNumberId);";
+                db.SaveData(sql, new { ContactId = contactId, PhoneNumberId = phoneNumber.Id }, _connectionString);
+            }
+
+
+                // Insert into the link table for that number
+                // Insert the new phone number if not, and get the id
+                // Then do the link table insert
             // Do the same for Email
         }
     }
