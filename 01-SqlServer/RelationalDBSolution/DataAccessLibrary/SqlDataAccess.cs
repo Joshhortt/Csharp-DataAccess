@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace DataAccessLibrary
 {
-	// Creating data 40. -- > 42.
 	public class SqlDataAccess
 	{
 		public List<T> LoadData<T, U>(string sqlStatement, U parameters, string connectionString)
@@ -21,7 +20,6 @@ namespace DataAccessLibrary
 			}
 		}
 
-		// Saving data 43. -- > 44.
 		public void SaveData<T, U>(string sqlStatement, T parameters, string connectionString)
 		{
 			using (IDbConnection connection = new SqlConnection(connectionString))
