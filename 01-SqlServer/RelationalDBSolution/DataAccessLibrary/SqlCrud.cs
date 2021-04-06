@@ -65,6 +65,12 @@ namespace DataAccessLibrary
                         _connectionString);
 
             // Get the ID number of the contact
+            sql = "select Id from dbo.Contacts where FirstName = @FirstName and LastName = @LastName;";
+            int contactId = db.LoadData<IdLookUpModel, dynamic>(
+                sql,
+                new { contact.BasicInfo.FirstName, contact.BasicInfo.LastName },
+                _connectionString).First().Id;
+
             // Identify if the Phone number exists
             // Insert into the link table for that number
             // Insert the new phone number if not, and get the id
