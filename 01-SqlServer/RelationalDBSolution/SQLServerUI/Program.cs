@@ -15,7 +15,7 @@ namespace SQLServerUI
 
 			// ReadAllContacts(sql);
 
-			ReadContact(sql, 1);
+			// ReadContact(sql, 1);
 
 			Console.ReadLine(); 
 		}

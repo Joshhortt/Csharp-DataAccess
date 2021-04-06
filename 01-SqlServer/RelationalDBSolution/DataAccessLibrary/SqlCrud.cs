@@ -54,5 +54,22 @@ namespace DataAccessLibrary
 
             return output;
         }
+    
+        // Implement Data to SQL Server
+        public void CreateContact(FullContactModel contact)
+		{
+            // Save the basic contact
+            string sql = "insert into dbo.Contacts (FirstName, LastName) values (@FirstName, @LastName);";
+            db.SaveData(sql,
+                        new { contact.BasicInfo.FirstName, contact.BasicInfo.LastName },
+                        _connectionString);
+
+            // Get the ID number of the contact
+            // Identify if the Phone number exists
+            // Insert into the link table for that number
+            // Insert the new phone number if not, and get the id
+            // Then do the link table insert
+            // Do the same for Email
+        }
     }
 }
