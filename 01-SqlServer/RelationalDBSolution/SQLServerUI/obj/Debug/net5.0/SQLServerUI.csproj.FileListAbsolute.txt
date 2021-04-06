@@ -24,3 +24,12 @@ C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\obj\Debug\net5.0\SQLServerUI.pdb
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\obj\Debug\net5.0\SQLServerUI.genruntimeconfig.cache
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\appsettings.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\Dapper.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLServerUI\bin\Debug\net5.0\DataAccessLibrary.pdb
