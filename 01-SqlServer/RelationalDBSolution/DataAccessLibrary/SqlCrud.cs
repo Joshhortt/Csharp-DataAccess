@@ -1,10 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
-using DataAccessLibrary.Models;
+﻿using DataAccessLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLibrary
 {
@@ -55,10 +53,9 @@ namespace DataAccessLibrary
 
             return output;
         }
-    
-        // Implement Data to SQL Server
+
         public void CreateContact(FullContactModel contact)
-		{
+        {
             // Save the basic contact
             string sql = "insert into dbo.Contacts (FirstName, LastName) values (@FirstName, @LastName);";
             db.SaveData(sql,
@@ -72,27 +69,23 @@ namespace DataAccessLibrary
                 new { contact.BasicInfo.FirstName, contact.BasicInfo.LastName },
                 _connectionString).First().Id;
 
-            // Identify if the Phone number exists
             foreach (var phoneNumber in contact.PhoneNumbers)
             {
                 if (phoneNumber.Id == 0)
                 {
-                    // Insert into the link table for that number
                     sql = "insert into dbo.PhoneNumbers (PhoneNumber) values (@PhoneNumber);";
                     db.SaveData(sql, new { phoneNumber.PhoneNumber }, _connectionString);
 
-                    // Insert the new phone number if not, and get the id
                     sql = "select Id from dbo.PhoneNumbers where PhoneNumber = @PhoneNumber;";
                     phoneNumber.Id = db.LoadData<IdLookUpModel, dynamic>(sql,
                         new { phoneNumber.PhoneNumber },
                         _connectionString).First().Id;
                 }
-                // Then do the link table insert
+
                 sql = "insert into dbo.ContactPhoneNumbers (ContactId, PhoneNumberId) values (@ContactId, @PhoneNumberId);";
                 db.SaveData(sql, new { ContactId = contactId, PhoneNumberId = phoneNumber.Id }, _connectionString);
             }
 
-            // Do the same for Email
             foreach (var email in contact.EmailAddresses)
             {
                 if (email.Id == 0)
@@ -107,7 +100,13 @@ namespace DataAccessLibrary
                 sql = "insert into dbo.ContactEmail (ContactId, EmailAddressId) values (@ContactId, @EmailAddressId);";
                 db.SaveData(sql, new { ContactId = contactId, EmailAddressId = email.Id }, _connectionString);
             }
-        }  
-    }
-}
+        }
 
+		public void UpdateContactName(BasicContactModel contact)
+		{
+			string sql = "update dbo.Contacts set FirstName = @FirstName, LastName = @LastName where Id = @Id";
+			db.SaveData(sql, contact, _connectionString);
+		}
+
+	}
+}
