@@ -1,4 +1,5 @@
-﻿using DataAccessLibrary.Models;
+﻿using Microsoft.Extensions.Configuration;
+using DataAccessLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,24 +77,37 @@ namespace DataAccessLibrary
             {
                 if (phoneNumber.Id == 0)
                 {
+                    // Insert into the link table for that number
                     sql = "insert into dbo.PhoneNumbers (PhoneNumber) values (@PhoneNumber);";
                     db.SaveData(sql, new { phoneNumber.PhoneNumber }, _connectionString);
 
+                    // Insert the new phone number if not, and get the id
                     sql = "select Id from dbo.PhoneNumbers where PhoneNumber = @PhoneNumber;";
                     phoneNumber.Id = db.LoadData<IdLookUpModel, dynamic>(sql,
                         new { phoneNumber.PhoneNumber },
                         _connectionString).First().Id;
                 }
-              
+                // Then do the link table insert
                 sql = "insert into dbo.ContactPhoneNumbers (ContactId, PhoneNumberId) values (@ContactId, @PhoneNumberId);";
                 db.SaveData(sql, new { ContactId = contactId, PhoneNumberId = phoneNumber.Id }, _connectionString);
             }
 
-
-                // Insert into the link table for that number
-                // Insert the new phone number if not, and get the id
-                // Then do the link table insert
             // Do the same for Email
-        }
+            foreach (var email in contact.EmailAddresses)
+            {
+                if (email.Id == 0)
+                {
+                    sql = "insert into dbo.EmailAddresses (EmailAddress) values (@EmailAddress);";
+                    db.SaveData(sql, new { email.EmailAddress }, _connectionString);
+
+                    sql = "select Id from dbo.EmailAddresses where EmailAddress = @EmailAddress;";
+                    email.Id = db.LoadData<IdLookUpModel, dynamic>(sql, new { email.EmailAddress }, _connectionString).First().Id;
+                }
+
+                sql = "insert into dbo.ContactEmail (ContactId, EmailAddressId) values (@ContactId, @EmailAddressId);";
+                db.SaveData(sql, new { ContactId = contactId, EmailAddressId = email.Id }, _connectionString);
+            }
+        }  
     }
 }
+
