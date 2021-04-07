@@ -12,26 +12,33 @@ namespace SQLServerUI
         {
             SqlCrud sql = new SqlCrud(GetConnectionString());
 
-            //ReadAllContacts(sql);
+            // ReadAllContacts(sql);
 
-            //ReadContact(sql, 3);
+            // ReadContact(sql, 3);
 
-            CreateNewContact(sql);
+             CreateNewContact(sql);
 
-            //UpdateContact(sql);
+            // UpdateContact(sql);
+
+           // RemovePhoneNumberFromContact(sql, 1, 1);
 
             Console.WriteLine("Done Processing");
 
             Console.ReadLine();
         }
 
-		private static void UpdateContact(SqlCrud sql)
+        private static void RemovePhoneNumberFromContact(SqlCrud sql, int contactId, int phoneNumberId)
+        {
+            sql.RemovePhoneNumberFromContact(contactId, phoneNumberId);
+        }
+
+        private static void UpdateContact(SqlCrud sql)
 		{
 			BasicContactModel contact = new BasicContactModel
 			{
 				Id = 1,
-				FirstName = "Timothy",
-				LastName = "Corey"
+				FirstName = "Josh",
+				LastName = "Hortt"
 			};
 			sql.UpdateContactName(contact);
 		}
@@ -47,11 +54,11 @@ namespace SQLServerUI
                 }
             };
 
-            user.EmailAddresses.Add(new EmailAddressModel { EmailAddress = "nope@aol.com" });
-            user.EmailAddresses.Add(new EmailAddressModel { Id = 2, EmailAddress = "me@timothycorey.com" });
+            user.EmailAddresses.Add(new EmailAddressModel { EmailAddress = "ana@gmail.com" });
+            user.EmailAddresses.Add(new EmailAddressModel { Id = 2, EmailAddress = "jose@gmx.com" });
 
-            user.PhoneNumbers.Add(new PhoneNumberModel { Id = 1, PhoneNumber = "555-1212" });
-            user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "555-9876" });
+            user.PhoneNumbers.Add(new PhoneNumberModel { Id = 1, PhoneNumber = "911815877" });
+            user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "906122005" });
 
             sql.CreateContact(user);
         }

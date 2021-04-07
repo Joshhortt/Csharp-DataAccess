@@ -1,7 +1,6 @@
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\bin\Debug\SQLContactsDB.dacpac
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\bin\Debug\SQLContactsDB.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\bin\Debug\SQLContactsDB.pdb
-C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\obj\Debug\SQLContactsDB.sqlprojAssemblyReference.cache
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\obj\Debug\Model.xml
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\obj\Debug\refactor.xml
 C:\Users\josec\Source\Repos\Csharp-DataAccess\01-SqlServer\RelationalDBSolution\SQLContactsDB\obj\Debug\postdeploy.sql

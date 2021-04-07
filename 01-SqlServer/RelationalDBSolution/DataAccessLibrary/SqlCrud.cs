@@ -102,11 +102,31 @@ namespace DataAccessLibrary
             }
         }
 
-		public void UpdateContactName(BasicContactModel contact)
-		{
-			string sql = "update dbo.Contacts set FirstName = @FirstName, LastName = @LastName where Id = @Id";
-			db.SaveData(sql, contact, _connectionString);
-		}
+        public void UpdateContactName(BasicContactModel contact)
+        {
+            string sql = "update dbo.Contacts set FirstName = @FirstName, LastName = @LastName where Id = @Id";
+            db.SaveData(sql, contact, _connectionString);
+        }
 
-	}
+        public void RemovePhoneNumberFromContact(int contactId, int phoneNumberId)
+        {
+            // Find all of the usages of the phone number id
+            // If 1, then delete link and phone number
+            // If > 1, then delete link from contact
+
+            string sql = "select Id, ContactId, PhoneNumberId from dbo.ContactPhoneNumbers where PhoneNumberId = @PhoneNumberId;";
+            var links = db.LoadData<ContactPhoneNumberModel, dynamic>(sql,
+                new { PhoneNumberId = phoneNumberId },
+                _connectionString);
+
+            sql = "delete from dbo.ContactPhoneNumbers where PhoneNumberId = @PhoneNumberId and ContactId = @ContactId";
+            db.SaveData(sql, new { PhoneNumberId = phoneNumberId, ContactId = contactId }, _connectionString);
+
+            if (links.Count == 1)
+            {
+                sql = "delete from dbo.PhoneNumbers where Id = @PhoneNumberId;";
+                db.SaveData(sql, new { PhoneNumberId = phoneNumberId }, _connectionString);
+            }
+        }
+    }
 }
