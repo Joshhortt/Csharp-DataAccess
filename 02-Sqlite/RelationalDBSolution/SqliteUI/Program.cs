@@ -1,4 +1,6 @@
-﻿using DataAccessLibrary;
+﻿// C # Data Access - Sqlite
+
+using DataAccessLibrary;
 using DataAccessLibrary.Models;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -12,16 +14,18 @@ namespace SqliteUI
 		{
             SqliteCrud sql = new SqliteCrud(GetConnectionString());
 
-            // ReadAllContacts(sql);
+            // To Tests Uncomment call methods below.
 
-           //  ReadContact(sql, 3);
+           // ReadAllContacts(sql);
+
+           // ReadContact(sql, 3);
 
            // CreateNewContact(sql);
 
-             //UpdateContact(sql);
-             //ReadAllContacts(sql);
+           // UpdateContact(sql);
+           // ReadAllContacts(sql);
 
-            RemovePhoneNumberFromContact(sql, 1, 1);
+           //RemovePhoneNumberFromContact(sql, 1, 1);
 
             Console.WriteLine("Processing Sqlite");
 
