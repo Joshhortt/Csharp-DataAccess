@@ -37,3 +37,4 @@ C:\Users\josec\Source\Repos\Csharp-DataAccess\02-Sqlite\RelationalDBSolution\Sql
 C:\Users\josec\Source\Repos\Csharp-DataAccess\02-Sqlite\RelationalDBSolution\SqliteUI\obj\Debug\net5.0\ref\SqliteUI.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\02-Sqlite\RelationalDBSolution\SqliteUI\obj\Debug\net5.0\SqliteUI.pdb
 C:\Users\josec\Source\Repos\Csharp-DataAccess\02-Sqlite\RelationalDBSolution\SqliteUI\obj\Debug\net5.0\SqliteUI.genruntimeconfig.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\02-Sqlite\RelationalDBSolution\SqliteUI\bin\Debug\net5.0\appsettings.json
