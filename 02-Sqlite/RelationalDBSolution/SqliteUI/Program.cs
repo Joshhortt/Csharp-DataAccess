@@ -12,15 +12,16 @@ namespace SqliteUI
 		{
             SqliteCrud sql = new SqliteCrud(GetConnectionString());
 
-             ReadAllContacts(sql);
+            // ReadAllContacts(sql);
 
-            // ReadContact(sql, 3);
+           //  ReadContact(sql, 3);
 
-            // CreateNewContact(sql);
+           // CreateNewContact(sql);
 
-            // UpdateContact(sql);
+             //UpdateContact(sql);
+             //ReadAllContacts(sql);
 
-            // RemovePhoneNumberFromContact(sql, 1, 1);
+            RemovePhoneNumberFromContact(sql, 1, 1);
 
             Console.WriteLine("Processing Sqlite");
 
@@ -37,13 +38,13 @@ namespace SqliteUI
             BasicContactModel contact = new BasicContactModel
             {
                 Id = 1,
-                FirstName = "Josh",
-                LastName = "Hortt"
+                FirstName = "Jose",
+                LastName = "Horta"
             };
             sql.UpdateContactName(contact);
         }
 
-        private static void CreateNewContact(SqliteCrud sql)
+		private static void CreateNewContact(SqliteCrud sql)
         {
             FullContactModel user = new FullContactModel
             {
