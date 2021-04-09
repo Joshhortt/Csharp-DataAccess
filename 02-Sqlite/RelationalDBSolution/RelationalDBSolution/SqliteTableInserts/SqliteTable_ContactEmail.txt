@@ -1,0 +1,6 @@
+CREATE TABLE "ContactEmail" (
+	"Id"	INTEGER NOT NULL,
+	"ContactId"	INTEGER NOT NULL,
+	"EmailAddressId"	INTEGER NOT NULL,
+	PRIMARY KEY("Id" AUTOINCREMENT)
+);
