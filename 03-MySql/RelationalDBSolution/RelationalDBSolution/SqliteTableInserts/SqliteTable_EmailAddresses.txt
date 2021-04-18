@@ -1,0 +1,5 @@
+CREATE TABLE "EmailAddresses" (
+	"Id"	INTEGER NOT NULL,
+	"EmailAddress"	TEXT NOT NULL,
+	PRIMARY KEY("Id" AUTOINCREMENT)
+);

@@ -1,0 +1,6 @@
+CREATE TABLE "ContactPhoneNumbers" (
+	"Id"	INTEGER NOT NULL,
+	"ContactId"	INTEGER NOT NULL,
+	"PhoneNumberId"	INTEGER NOT NULL,
+	PRIMARY KEY("Id" AUTOINCREMENT)
+);
