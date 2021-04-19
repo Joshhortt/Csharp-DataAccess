@@ -14,11 +14,11 @@ namespace MySqlUI
         {
             MySqlCrud sql = new MySqlCrud(GetConnectionString());
 
-            // To Tests Uncomment call methods below.
+            // ** To Tests Uncomment call methods below. **
 
-            // ReadAllContacts(sql);
+           // ReadAllContacts(sql);
 
-            // ReadContact(sql, 3);
+             ReadContact(sql, 1);
 
             // CreateNewContact(sql);
 
@@ -42,8 +42,8 @@ namespace MySqlUI
             BasicContactModel contact = new BasicContactModel
             {
                 Id = 1,
-                FirstName = "Jose",
-                LastName = "Horta"
+                FirstName = "Josh",
+                LastName = "Hortt"
             };
             sql.UpdateContactName(contact);
         }
@@ -63,7 +63,7 @@ namespace MySqlUI
             user.EmailAddresses.Add(new EmailAddressModel { Id = 2, EmailAddress = "jose@gmx.com" });
 
             user.PhoneNumbers.Add(new PhoneNumberModel { Id = 1, PhoneNumber = "911815877" });
-            user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "906122005" });
+            user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "927916476" });
 
             sql.CreateContact(user);
         }

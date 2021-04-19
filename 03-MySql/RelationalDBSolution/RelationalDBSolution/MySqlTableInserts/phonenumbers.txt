@@ -1,0 +1,4 @@
+CREATE TABLE `mysqlcontactsdb`.`phonenumbers` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `PhoneNumber` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`Id`));

@@ -1,0 +1,25 @@
+
+insert into contacts (FirstName, LastName)
+values ('Josh', 'Hortt');
+
+---------------------------------------------
+
+insert into emailaddresses (EmailAddress)
+values ('joshhortt@yahoo.com'), ('jose@gmx.com');
+
+--------------------------------------------------
+
+insert into phonenumbers (PhoneNumber)
+values ('911815877'), ('927916476');
+
+-----------------------------------------------
+
+insert into contactemail (ContactId, EmailAddressId)
+values (1, 1), (1, 2);
+
+--------------------------------------------------
+
+insert into contactphonenumbers (ContactId, PhoneNumberId)
+values (1, 1), (1, 2);
+
+------------------------------------------------------
