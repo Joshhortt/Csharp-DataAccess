@@ -40,10 +40,19 @@ namespace MongoDbUI
             // GetContactById("5eb4dfb2-6e63-41c7-aacd-e66fa5943985");
             // UpdateContactsFirstName("Jose", "fb3ddc6d-a4cc-49fa-95d9-c3674cd387bb");
             // GetAllContacts();
-             RemovePhoneNumberFromUser("911815877", "fb3ddc6d-a4cc-49fa-95d9-c3674cd387bb");
+            // RemovePhoneNumberFromUser*/("911815877", "fb3ddc6d-a4cc-49fa-95d9-c3674cd387bb");
+              RemoveUser("fb3ddc6d-a4cc-49fa-95d9-c3674cd387bb");
+
 
             Console.WriteLine("Done Processing MongoDB!");
             Console.ReadLine();
+        }
+
+        // Remove User
+        public static void RemoveUser(string id)
+        {
+            Guid guid = new Guid(id);
+            db.DeleteRecord<ContactModel>(tableName, guid);
         }
 
         // Remove Phone Number From the User
