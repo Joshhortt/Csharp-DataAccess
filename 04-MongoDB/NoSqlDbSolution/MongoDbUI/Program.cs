@@ -37,10 +37,23 @@ namespace MongoDbUI
 
             // CreateContact(user);
             // GetAllContacts();
-             GetContactById("5eb4dfb2-6e63-41c7-aacd-e66fa5943985");
+            // GetContactById("5eb4dfb2-6e63-41c7-aacd-e66fa5943985");
+            UpdateContactsFirstName("Jose", "fb3ddc6d-a4cc-49fa-95d9-c3674cd387bb");
+            GetAllContacts();
 
             Console.WriteLine("Done Processing MongoDB!");
             Console.ReadLine();
+        }
+
+        // Update Contatcts First Name
+        private static void UpdateContactsFirstName(string firstName, string id)
+        {
+            Guid guid = new Guid(id);
+            var contact = db.LoadRecordById<ContactModel>(tableName, guid);
+
+            contact.FirstName = firstName;
+
+            db.UpsertRecord(tableName, contact.Id, contact);
         }
 
         // Get Contact by Id
