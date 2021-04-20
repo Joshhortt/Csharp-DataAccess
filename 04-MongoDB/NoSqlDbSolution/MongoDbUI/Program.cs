@@ -36,11 +36,22 @@ namespace MongoDbUI
             user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "906122005" });  // 2
 
             // CreateContact(user);
-               GetAllContacts();
+            // GetAllContacts();
+             GetContactById("5eb4dfb2-6e63-41c7-aacd-e66fa5943985");
 
             Console.WriteLine("Done Processing MongoDB!");
             Console.ReadLine();
         }
+
+        // Get Contact by Id
+        private static void GetContactById(string id)
+        {
+            Guid guid = new Guid(id);
+            var contact = db.LoadRecordById<ContactModel>(tableName, guid);
+
+            Console.WriteLine($"{ contact.Id}: { contact.FirstName } { contact.LastName }");
+        }
+
 
         // Get All Contacts
         private static void GetAllContacts()
