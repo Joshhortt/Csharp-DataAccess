@@ -1,0 +1,11 @@
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\bin\Debug\netcoreapp3.1\Cosmos.CRTCompat.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.deps.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\05-CosmosDB\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.pdb
