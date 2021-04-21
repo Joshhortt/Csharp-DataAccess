@@ -113,6 +113,16 @@
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
+      },
+      "DataAccessLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DataAccessLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLibrary.dll": {}
+        }
       }
     }
   },
@@ -300,10 +310,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DataAccessLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLibrary/DataAccessLibrary.csproj",
+      "msbuildProject": "../DataAccessLibrary/DataAccessLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DataAccessLibrary >= 1.0.0",
       "Microsoft.Extensions.Configuration.Binder >= 5.0.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0"
     ]
@@ -342,7 +358,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\josec\\Source\\Repos\\Csharp-DataAccess\\06-TextFiles\\TextFileSolution\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\josec\\Source\\Repos\\Csharp-DataAccess\\06-TextFiles\\TextFileSolution\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

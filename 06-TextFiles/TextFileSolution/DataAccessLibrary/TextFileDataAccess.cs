@@ -1,17 +1,15 @@
 ﻿using DataAccessLibrary.Models;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLibrary
 {
     public class TextFileDataAccess
     {
-        // READ ALL RECORDS
-        public static List<ContactModel> ReadAllRecords(string textFile)
+        public List<ContactModel> ReadAllRecords(string textFile)
         {
             if (File.Exists(textFile) == false)
             {
@@ -28,7 +26,7 @@ namespace DataAccessLibrary
 
                 if (values.Length < 4)
                 {
-                    throw new Exception($"This a Invalid row of data: { line }");
+                    throw new Exception($"Invalid row of data: { line }");
                 }
 
                 c.FirstName = values[0];
@@ -42,17 +40,16 @@ namespace DataAccessLibrary
             return output;
         }
 
-        // WRITE ALL RECORDS
-        public static void WriteAllRecords(List<ContactModel> contacts, string textFile)
+        public void WriteAllRecords(List<ContactModel> contacts, string textFile)
         {
             List<string> lines = new List<string>();
 
-			foreach (var c in contacts)
-			{
-				lines.Add($"{ c.FirstName },{ c.LastName },{ String.Join(';', c.EmailAddresses) },{ String.Join(';', c.PhoneNumbers) }");
-			}
+            foreach (var c in contacts)
+            {
+                lines.Add($"{ c.FirstName },{ c.LastName },{ String.Join(';', c.EmailAddresses) },{ String.Join(';', c.PhoneNumbers) }");
+            }
 
-			File.WriteAllLines(textFile, lines);
-		}
+            File.WriteAllLines(textFile, lines);
+        }
     }
 }

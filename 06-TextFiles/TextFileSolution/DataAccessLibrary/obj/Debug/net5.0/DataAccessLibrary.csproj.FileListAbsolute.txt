@@ -1,0 +1,11 @@
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.deps.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\bin\Debug\net5.0\ref\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\06-TextFiles\TextFileSolution\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
