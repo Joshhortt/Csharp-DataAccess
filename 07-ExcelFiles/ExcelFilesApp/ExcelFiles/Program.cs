@@ -25,6 +25,9 @@ namespace ExcelFiles
 
 			DeleteIfExists(file);
 
+			using var package = new ExcelPackage(file);
+
+			
 		}
 
 		private static void DeleteIfExists(FileInfo file)
