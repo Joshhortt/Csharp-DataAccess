@@ -1,0 +1,16 @@
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.exe
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.deps.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.runtimeconfig.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.runtimeconfig.dev.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\ref\LinqUI.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\bin\Debug\net5.0\LinqUI.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\ref\LinqUI.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\08-Linq_Lambdas\LinqLambdaSolution\LinqUI\obj\Debug\net5.0\LinqUI.genruntimeconfig.cache
