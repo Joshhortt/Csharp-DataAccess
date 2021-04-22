@@ -18,16 +18,19 @@ namespace ExcelFiles
 			await SaveExcelFile(people, file);
 		}
 
-		private static Task SaveExcelFile(List<PersonModel> people, FileInfo file)
+		private static async Task SaveExcelFile(List<PersonModel> people, FileInfo file)
 		{
-			Task output = null;
-			return output;
-
 			DeleteIfExists(file);
 
-			using var package = new ExcelPackage(file);
+			using var package = new ExcelPackage(file);  // Create excel file
 
-			
+			var ws = package.Workbook.Worksheets.Add("MainReport");  // Add new Worksheet
+
+			var range = ws.Cells["A1"].LoadFromCollection(people, true);  // Start at cell A1 (Upper left). Load from people List into the file
+
+			range.AutoFitColumns();  // fit into the right widths/heights of the column
+
+			await package.SaveAsync();  // Saves asynchronously the file
 		}
 
 		private static void DeleteIfExists(FileInfo file)
