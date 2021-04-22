@@ -91,9 +91,9 @@ namespace ExcelFiles
 			List<PersonModel> output = new()
 			{
 				new() { Id = 1, FirstName = "Josh", LastName = "Hortt" },
-				new() { Id = 1, FirstName = "Ana", LastName = "Rebelo" },
-				new() { Id = 1, FirstName = "Sofia", LastName = "Nasala" },
-				new() { Id = 1, FirstName = "Alex", LastName = "Rebelo" }
+				new() { Id = 2, FirstName = "Ana", LastName = "Rebelo" },
+				new() { Id = 3, FirstName = "Sofia", LastName = "Nasala" },
+				new() { Id = 4, FirstName = "Alex", LastName = "Rebelo" }
 
 			};
 			return output;
