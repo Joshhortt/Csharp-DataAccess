@@ -1,0 +1,16 @@
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.exe
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.deps.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.runtimeconfig.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.runtimeconfig.dev.json
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\ref\EntityFrameworkIntro.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\ref\EntityFrameworkIntro.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.pdb
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.genruntimeconfig.cache
