@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -36,7 +37,7 @@ class DishIngredient
 	public int DishId { get; set; }
 }
 
-// 1. Create the DataBase Context
+// 2. Create the DataBase Context
 class CookbookContext : DbContext
 {
 	public DbSet<Dish> Dishes { get; set; }
@@ -46,5 +47,24 @@ class CookbookContext : DbContext
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 	{
 
+	}
+}
+
+// 3. Create the Factory
+
+class CookbookContextFactory : IDesignTimeDbContextFactory<CookbookContext>
+{
+	public CookbookContext CreateDbContext(string[] args)
+	{
+		var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+
+		var optionsBuilder = new DbContextOptionsBuilder<CookbookContext>();
+		optionsBuilder
+			// Uncomment the following line if you want to print generated
+			// SQL statements on the console.
+			// .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
+			.UseSqlServer(configuration["ConnectionStrings:DefaultConnection"]);
+
+		return new CookbookContext(optionsBuilder.Options);
 	}
 }
