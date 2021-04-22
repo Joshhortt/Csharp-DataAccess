@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 Console.WriteLine("Entity Framework!");
 
-// Create the Model classes
+// 1. Create the Model classes
 class Dish
 {
 	public int Id { get; set; }
@@ -33,4 +34,17 @@ class DishIngredient
 	public decimal Amount{ get; set; }
 	public Dish? Dish { get; set; }
 	public int DishId { get; set; }
+}
+
+// 1. Create the DataBase Context
+class CookbookContext : DbContext
+{
+	public DbSet<Dish> Dishes { get; set; }
+	public DbSet<DishIngredient> Ingredients { get; set; }
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+	public CookbookContext(DbContextOptions<CookbookContext> options) : base(options)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+	{
+
+	}
 }
