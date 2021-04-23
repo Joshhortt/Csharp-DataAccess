@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -51,7 +52,6 @@ class CookbookContext : DbContext
 }
 
 // 3. Create the Factory
-
 class CookbookContextFactory : IDesignTimeDbContextFactory<CookbookContext>
 {
 	public CookbookContext CreateDbContext(string[] args)
