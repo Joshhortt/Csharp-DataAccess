@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 var factory = new CookbookContextFactory();
 using var context = factory.CreateDbContext(args);
@@ -15,14 +16,29 @@ var porridge = new Dish { Title = "Breakfast Porridge", Notes = "This taste is a
 context.Dishes.Add(porridge);
 await context.SaveChangesAsync();
 
-// 1. Add First Record
+// 1. ADD: Add First Record
 //Console.WriteLine("Added Porridge successfully");  
 
-// 2. Re-Add First Record with Id specification
-//Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully"); 
+// 2. ADD: Re-Add First Record with Id specification
+Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully"); 
 
-// 3. Remove porridge from database
-Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully");  // Test 3
+// 5. READ: Read Query +  Execute the Query
+Console.WriteLine("Checking Stars for Porridge");
+var dishes = await context.Dishes
+	.Where(d => d.Title.Contains("Porridge")) //LINQ -> SQL- Ex: If we remove r from porridge and run, shows the message below. 
+	.ToListAsync();
+if (dishes.Count != 1) Console.Error.WriteLine("Something bad happened. Porridge dessapeared");
+Console.WriteLine($"Porridge has { dishes[0].Stars} stars");
+
+
+// 4. UPDATE: Update Stars
+Console.WriteLine("Change Porridge Stars to 5");
+porridge.Stars = 5;
+await context.SaveChangesAsync();
+Console.WriteLine("Updated Stars");
+
+// 3. DELETE:  Remove porridge from database
+//Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully");  
 Console.WriteLine("Removing Porridge from database");
 context.Dishes.Remove(porridge);  // removes porridge from db
 await context.SaveChangesAsync();
