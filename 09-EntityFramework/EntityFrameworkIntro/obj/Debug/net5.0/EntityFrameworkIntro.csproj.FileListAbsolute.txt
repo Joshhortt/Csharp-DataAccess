@@ -142,3 +142,7 @@ C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFramework
 C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\ref\EntityFrameworkIntro.dll
 C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.pdb
 C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.genruntimeconfig.cache
+C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\jcalv\source\repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
