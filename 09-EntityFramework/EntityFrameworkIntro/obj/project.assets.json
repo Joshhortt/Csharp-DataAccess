@@ -5962,28 +5962,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josec\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\jcalv\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josec\\Source\\Repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\EntityFrameworkIntro.csproj",
+      "projectUniqueName": "C:\\Users\\jcalv\\source\\repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\EntityFrameworkIntro.csproj",
       "projectName": "EntityFrameworkIntro",
-      "projectPath": "C:\\Users\\josec\\Source\\Repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\EntityFrameworkIntro.csproj",
-      "packagesPath": "C:\\Users\\josec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josec\\Source\\Repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\obj\\",
+      "projectPath": "C:\\Users\\jcalv\\source\\repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\EntityFrameworkIntro.csproj",
+      "packagesPath": "C:\\Users\\jcalv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jcalv\\source\\repos\\Csharp-DataAccess\\09-EntityFramework\\EntityFrameworkIntro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\josec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jcalv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

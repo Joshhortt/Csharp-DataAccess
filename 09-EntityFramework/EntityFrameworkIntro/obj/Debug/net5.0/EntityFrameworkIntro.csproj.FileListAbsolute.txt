@@ -5,7 +5,6 @@ C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFramework
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\ref\EntityFrameworkIntro.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\EntityFrameworkIntro.pdb
-C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.csprojAssemblyReference.cache
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.AssemblyInfoInputs.cache
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.AssemblyInfo.cs
@@ -70,3 +69,4 @@ C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFramework
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\josec\Source\Repos\Csharp-DataAccess\09-EntityFramework\EntityFrameworkIntro\obj\Debug\net5.0\EntityFrameworkIntro.csprojAssemblyReference.cache

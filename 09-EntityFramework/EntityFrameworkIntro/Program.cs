@@ -6,7 +6,16 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-Console.WriteLine("Entity Framework!");
+var factory = new CookbookContextFactory();
+using var context = factory.CreateDbContext(args);
+
+Console.WriteLine("Add Porridge to breakfast");
+
+var porridge = new Dish { Title = "Breakfast Porridge", Notes = "This taste is amazing", Stars = 4 };
+context.Dishes.Add(porridge);
+await context.SaveChangesAsync();
+
+Console.WriteLine("Added Porridge successfully");
 
 // 1. Create the Model classes
 class Dish
