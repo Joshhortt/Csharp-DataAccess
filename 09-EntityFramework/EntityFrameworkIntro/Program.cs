@@ -15,7 +15,19 @@ var porridge = new Dish { Title = "Breakfast Porridge", Notes = "This taste is a
 context.Dishes.Add(porridge);
 await context.SaveChangesAsync();
 
-Console.WriteLine("Added Porridge successfully");
+// 1. Add First Record
+//Console.WriteLine("Added Porridge successfully");  
+
+// 2. Re-Add First Record with Id specification
+//Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully"); 
+
+// 3. Remove porridge from database
+Console.WriteLine($"Added Porridge (id = {porridge.Id }) successfully");  // Test 3
+Console.WriteLine("Removing Porridge from database");
+context.Dishes.Remove(porridge);  // removes porridge from db
+await context.SaveChangesAsync();
+
+Console.WriteLine("Porridge removed");
 
 // 1. Create the Model classes
 class Dish
